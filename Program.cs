@@ -23,13 +23,13 @@ internal class Program
         builder.Services.AddEndpointsApiExplorer();
         builder.Services.AddSwaggerGen(options =>
         {
-            options.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo
+            options.SwaggerDoc("v1", new OpenApiInfo
             {
                 Title = "ItemWise API V1",
                 Version = "v1"
             });
 
-            options.SwaggerDoc("v2", new Microsoft.OpenApi.Models.OpenApiInfo
+            options.SwaggerDoc("v2", new OpenApiInfo
             {
                 Title = "ItemWise API V2",
                 Version = "v2"
