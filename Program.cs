@@ -5,6 +5,7 @@ internal class Program
     private static void Main(string[] args)
     {
         var builder = WebApplication.CreateBuilder(args);
+        builder.WebHost.UseUrls("http://*:80");
 
         builder.Services.AddControllers();
         builder.Services.AddApiVersioning(options =>
