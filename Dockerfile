@@ -9,3 +9,5 @@ COPY ["ItemWise.csproj", "./"]
 RUN dotnet restore "./ItemWise.csproj"
 # Then copy everything else
 COPY . .
+
+ENTRYPOINT ["dotnet", "ItemWise.dll"]
