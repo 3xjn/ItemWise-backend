@@ -1,0 +1,6 @@
+@ItemWise_HostAddress = http://localhost:5223
+
+GET {{ItemWise_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
